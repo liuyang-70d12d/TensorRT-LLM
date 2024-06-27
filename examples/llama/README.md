@@ -67,7 +67,7 @@ pip install -r requirements.txt
 
 Need to prepare the HF LLaMA checkpoint by following the guides here https://huggingface.co/docs/transformers/main/en/model_doc/llama.
 
-The `trtllm-build` command builds TensorRT engine(s) from HF checkpoint. If no checkpoint directory is specified, TensorRT-LLM will build engine(s) with dummy weights.
+The `trtllm-build` command builds TensorRT engine(s) from HF checkpoint. **If no checkpoint directory is specified, TensorRT-LLM will build engine(s) with dummy weights.**
 
 `trtllm-build` command has a variety of options. In particular, the plugin-related options have two categories:
 * Plugin options that requires a data type (e.g., `gpt_attention_plugin`), you can
